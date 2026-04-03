@@ -1,0 +1,10 @@
+# Сайт Netlify = только статика из frontend/dist. API (FastAPI) разворачивается отдельно.
+# См. README — раздел про деплой на Netlify.
+
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"

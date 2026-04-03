@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+node_modules/
+dist/
+# генерируется scripts/write-netlify-redirects.mjs перед сборкой
+frontend/public/_redirects
+*.sqlite3
+*.sqlite
+data/moex_cache.sqlite
+.DS_Store
